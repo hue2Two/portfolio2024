@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: solid black 5px;
+}
+
+header {
+    border: solid green 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 98vh;
+    width: 30vw;
+    z-index: 2;
+
+    background-color: lightblue;
+}
+
+#headerP1 {
+    border: solid red 5px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20%;
+}
+
+#headerP1 img {
+    border: solid pink 5px;
+    width: 50%;
+    /* align-items: center; */
+}
+
+#headerP2 {
+    border: solid blue 5px;
+    text-align: center;
+}
+
+#headerP2 ul {
+    list-style: none;
+}
+
+#headerP2 ul li {
+    border: solid black 5px;
+    margin: 10px;
+}
+
+#headerP2 ul li:hover {
+    background: black;
+    cursor: pointer;
+}
+
+#headerP2 ul li a {
+    border: solid brown 5px;
+    display: flex;
+    justify-content: center;
+} 
+
+html {
+    scroll-behavior: smooth;
+}
+
+#headerP2 ul li:hover a {
+    color: white;
+}
+
+#headerP2 ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: x-large;
+    /* width: fit-content; */
+    /* width: max-content; */
+}
+
+main {
+    border: solid grey 10px;
+    margin-left: 31.5vw;
+    height: fit-content;
+}
+
+/* #mainP1 {
+    border: solid pink 5px;
+} */
+
+.cards {
+    border: solid orange 5px;
+    margin: 5px;
+}
+
+#mainP2_continue {
+    border: solid brown 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#mainP2_continue div {
+    border: solid pink 5px;
+}
+
+#mainP2_continue div p {
+    border: solid black 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#mainP2_continue2 {
+    border: solid blue 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#mainP2_continue2 p {
+    border: solid red 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#mainP2 section {
+    border: solid lightgreen 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#mainP2 section div {
+    border: solid black 5px;
+}
+
+#mainP2 section div p {
+    border: solid gray 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+#mainP3_1 {
+    border: solid pink 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#mainP3_1 div {
+    border: solid lightblue 5px;
+    margin: 5px;
+    max-width: 275px;
+    width: fit-content;
+    padding: 5px;
+    text-align: center;
+}
+
+#mainP3_1 div:hover {
+    cursor: pointer;
+}
+
+/* #mainP3_1 div:nth-child(1) {
+    border: solid red 5px;
+}  */
+
+#mainP3_2 {
+    border: solid purple 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainP3_2 section{
+    border: solid lightcoral 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#mainP3_2 section div {
+    border: solid goldenrod 5px;
+    margin: 5px;
+    width: 275px;
+    padding: 5px;
+    text-align: center;
+}
+
+#mainP3_2 section div:hover {
+    cursor: pointer;
+}
+
+#mainP3_2 section div:nth-child(2) {
+    /* border: solid red 5px; */
+}
+
+/* -------------------------------------------------- */
+.container {
+    border: solid lightsalmon 5px;
+}
+
+.container form {
+    border: solid green 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#hamburgerMenu {
+    display: none;
+}
+
+.innerList {
+    list-style-position: inside;
+    border: solid blue 2px;
+    /* width: 80%; */
+    /* text-align: center; */
+}
+
+.innerList li {
+    border: solid green 2px;
+    /* width: 100%; */
+    text-align: left;
+}
+
+/* .splitVisit {
+    border: solid grey 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.splitVisit button {
+    width: 50px;
+    height: 30px;
+} */
+
+@media only screen and (max-width: 800px) {
+    header {
+        /* position: relative; */
+        display: none;
+    }
+
+    main {
+        margin-left: 0px;
+    }
+
+    #hamburgerMenu {
+        display: block;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    #hamburgerMenu:hover {
+        cursor: pointer;
+    }
+
+    #headerP2 ul li a {
+        font-size: 100%;
+    }
+
+    /* nav ul li {
+        width: fit-content;
+        align-items: center;
+    }
+
+    #headerP2 {
+        
+    } */
+}
